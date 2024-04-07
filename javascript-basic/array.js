@@ -16,16 +16,27 @@ data[6]();
 for(let index in data){
     console.log(`value of ${index} is ${data[index]}`);
 }
-
+  //
 //********************************************************************************* */
 
 //for of loop--
 for(let value of data)
 {
-    console.log(`value of =${value}`);
+    console.log(`value of= ${value} `);
 }
 
+  //
 //******************************************************************************** */
 
 //for each
-data.forEach(value=>console.log(`Value of Array=${value}`));
+// data.forEach(value=>console.log(`Value of Array=${value}`));
+
+//*************************************************************/
+
+//to access individual elements
+let arr=[1,2,3,3,4,5,6,7,8,9,10];
+console.log(arr.at(0));
+
+//********************************************************************** */
+  arr.fill(50, 3, 4);
+  console.log(arr);
