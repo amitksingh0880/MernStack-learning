@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+</head>
+<body>
+    <p id="info"></p>
+    <p id="exit"></p>
+    <button id="alert">OPEN ALERT</button>
+    <button onclick="openURL(event)">Open URL</button> 
+    <button onmouseover="openURL()" onmouseout="exit()">Open URL</button> 
+    <button id="msg">massage</button>
+    <!-- //onclick--Event; -->
+    <script>
+        const openURL=(event)=>{
+            // window.open("https://www.google.com");
+            // document.location="https://www.google.com";
+            // history.forward();
+            document.getElementById("info").innerHTML= "<h1>Hello</h1>";
+            document.getElementById("info").innerHTML= navigator.userAgent;
+            document.getElementById("info").innerHTML= navigator.appVersion;
+        }
+        const exit=()=>{
+            document.getElementById("exit").innerHTML = "<h2>DOM</h2>"
+        }
+        const alertButton = document.querySelector("#alert");
+        alertButton.onclick=()=>{
+            window.alert("welcome to JS");
+        }
+        const msgButton = document.getElementById("msg");
+        msgButton.addEventListener("click",()=>{
+            alert("this is msg");
+        });
+    </script>
+</body>
+</html>
