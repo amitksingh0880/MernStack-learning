@@ -20,16 +20,15 @@ const validate = () => {
     if (name === "") {
         printError("nameError", "Please enter your name");
     } else {
-        printError("nameError","");
-        data={...data,name};
+        printError("nameError", "");
+        data.name = name;
         nameError = false;
     }
     if (mobile === "") {
         printError("mobileError", "Please enter your mobile number");
     } else {
         printError("mobileError", "");
-        // data.mobile = mobile;
-        data={...data,mobile};
+        data.mobile = mobile;
         mobileError = false;
     }
     if (email === "") {
@@ -37,7 +36,7 @@ const validate = () => {
     } else {
         printError("emailError", "");
         // data.email = email;
-        data={...data,email};
+        data.email = email;
         emailError = false;
     }
     if (hobbies.length > 0) {
@@ -58,8 +57,7 @@ const validate = () => {
         printError("langError", "Please select your language");
     } else {
         printError("langError", "");
-        // data.lang = lang;
-        data={...data,lang};
+        data.lang = lang;
         langError = false;
     }
 
