@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<style>
+    #card{
+             display:block;
+             margin: auto;
+             width: 60%;
+             padding: 5px;
+             height: 100px;
+             text-align: center;
+             justify-content: center;
+             background-color:aquamarine;
+    }
+    #logo{
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+    }
+    #input-block{
+        display: flex;
+        justify-content: center;
+    }
+    #submit{
+        display: flex;
+        justify-content: space-between                                                                                                                                                                          ;
+    }
+</style>
+
+<body>
+    <div id="card">
+        <div id="logo">
+            <h1>Weather App</h1>
+        </div>
+        <div id="input-block">
+             <label for="input"></label>
+             <input type="text" name="input" id="input-box" placeholder="Enter the name of city">
+             <input type="submit" name="Search" id="submit">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
