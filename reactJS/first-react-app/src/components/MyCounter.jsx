@@ -17,7 +17,7 @@ const MyCounter = () => {
       lcounter[index].count--;
       setCounters(lcounter);
     }
-   }; 
+  }; 
     const increment = (aCounter) => {
       const lcounter = [ ...counter ];
       const index = lcounter.indexOf(aCounter);
