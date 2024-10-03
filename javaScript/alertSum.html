@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <button type="button" onclick="calculate()">Result</button>
+
+    <script>
+        function calculate(){
+            let num1 = prompt("Enter num1");
+            let num2 = prompt("Enter num2");
+
+            let check = confirm("Are you sure you want to continue");
+            if(check == true){
+                const result = parseFloat(num1)+parseFloat(num2);
+                alert("Sum: "+result);
+            }
+        }
+    </script>
+</body>
+</html>

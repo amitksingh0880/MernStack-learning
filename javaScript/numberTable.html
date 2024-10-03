@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="num1" id="in">
+    <button onclick="createTable()">Create Table</button><br><br>
+    <p id="p">This is a Table of number</p>
+
+    <script>
+        function createTable() {
+            var num = document.querySelector('#in').value;
+            var result = '';
+                for (let j = 1; j <= 10; j++) {
+                    result += `${num} * ${j} = ${num * j}<br>`;
+                }
+            document.getElementById('p').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pid">This is p tag</p>
+    <button type="button" id="btn">Result</button>
+
+    <script>
+        let buttonR = document.getElementById("btn");
+        buttonR.addEventListener("click", paraChanged);
+        function paraChanged(){
+            let para = document.getElementById("pid");
+            para.innerHTML = "<h1>This is changed p tag</h1>";
+        }
+    </script>
+</body>
+</html>

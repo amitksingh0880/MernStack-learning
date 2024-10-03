@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Note: === this align the item to center as well as make the text align making it 
+        alternative of display flex and justify content center*/
+        #container {
+            padding: 20px;
+            background-color: white;
+            border: 1px solid white;
+            margin: 0 auto;
+            max-width: fit-content;
+            box-shadow: aquamarine 20px;
+            box-shadow:0 0 10px grey;
+            border-radius: 5px;
+        }
+
+        .half-circle {
+            width: 400px;
+            height: 200px;
+            border-radius: 200px 200px 0 0;
+            background-color: rgb(55, 157, 111);
+            display: flex;
+            
+        }
+    </style>
+</head>
+
+<body style="position: relative;">
+    <!-- <div id="container" style="align-items: center;"> -->
+    <div class="half-circle"></div>
+    <div id="container">
+        <h3 style="margin-left: 100px;">Ticket Order Form</h3>
+        <hr>
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name" id="name">
+        <input type="text" name="lastname" id="lastname">
+        <br>
+        <br>
+
+        <label for="name">Email Address</label> <br>
+        <input type="email" id="email" name="email" style="width: 320px;"><br><br>
+
+        <label for="name">Adult Ticket</label>
+        <div style="display: inline; align-items: end; margin-left: 210px;">
+            <span >$15</span>
+            <div style="margin-left: 280px;">
+                <input type="number" id="number" name="number" style="width: 40px; display: inline; justify-content: end; background-color: grey;"><br>
+            </div>
+        </div>
+        <br>
+
+        <label for="name">Child Ticket</label>
+        <div style="display: inline; align-items: end; margin-left: 210px;">
+            <span >$15</span>
+            <div style="margin-left: 280px;">
+                <input type="number" id="number" name="number" style="width: 40px; display: inline; justify-content: end;"><br>
+            </div>
+        </div>
+        <br>
+
+        <label for="name">Senior Ticket</label>
+        <div style="display: inline; align-items: end; margin-left: 210px;">
+            <span >$15</span>
+            <div style="margin-left: 280px;">
+                <input type="number" id="number" name="number" style="width: 40px; display: inline; justify-content: end;"><br>
+            </div>
+        </div>
+       <br>
+
+       <button type="submit" style="background-color: rgb(229, 75, 75); color: white; width: 350px; height: 50px; border-radius: 10px;">Continue to Payment</button>
+        
+        </form>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>

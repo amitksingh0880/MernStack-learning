@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo">This is static paragraph text</p>
+    <h1 id="demoH">This is static heading</h1> -->
+
+    <h1>This is static demo</h1>
+    <h1>Demo</h1>
+    <!-- <p class="demo">This is static para demo</p>
+
+    <p class="pdemo">This is paragraph for HTML</p>
+    <p class="bdemo">This is bdemo tag</p>
+
+    <p class="qs">This para for qs</p> -->
+
+    <script>
+        // let pdemo = document.getElementById("demo");
+        // pdemo.innerText = "This is dynamic paragraph text"
+        // pdemo.innerHTML = "<h1>The is dynamic text through innerHTML</h1>"
+
+        // let hdemo = document.getElementById("demoH");
+        // hdemo.innerText = "This is dynamic heading"
+        // hdemo.innerHTML = "The is dynamic text through innerHTML"
+
+        let demoClass = document.getElementsByClassName("demo");
+        for(let i = 0; i < demoClass.length; i++){
+            demoClass[i].innerHTML = "<h1>The is dynamic text through loop</h1>"
+        } 
+
+        let p = document.getElementsByTagName("p");
+        p[0].innerHTML = "This is dynamic paragraph"
+        p[1].innerHTML = "This is dynamic paragraph 2"
+
+        document.querySelector(".qs").innerHTML = "<h1>This is dynamic paragraph</h1>"
+
+        const h = document.querySelectorAll("h1")
+        h[0].innerText = "This is dynamic paragraph";
+    </script>
+
+</body>
+</html>

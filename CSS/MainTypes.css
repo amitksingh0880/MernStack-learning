@@ -1,0 +1,45 @@
+p{
+    color: orange;
+    /* background-color: black; */
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 60px;
+    font-variant:small-caps;
+    font-weight: bold;
+}
+* {
+    background-image: url(../abc.png);
+    background-repeat: repeat;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: left;
+}
+a:link {
+    color :#FF0000;
+}
+a:visited {
+    color: #00FF00;
+}
+
+a:hover {
+    color :#FF0FF0;
+}
+a:active {
+ color: #0000FF;
+}
+/* text formatting */
+
+h1 {
+    text-align: center;
+    text-decoration: overline;
+    text-transform:uppercase;
+    text-indent: 50px;
+    color: blue;
+    letter-spacing: 3px;
+    line-height: 700px;
+    word-spacing: 10px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 5px red;
+    /* Add property for no scroll */
+    overflow-x: hidden;
+}

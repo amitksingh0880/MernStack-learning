@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this align the item to center as well as make the text align making it 
+        alternative of display flex and justify content center*/
+        #container{
+            margin: 0 auto;
+            max-width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="container" style="align-items: center;"> -->
+        <div id="container">
+            <h1>Form examples</h1>
+            <hr>
+            <label for="name">Enter your Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            <hr>
+
+            <label for="name">Enter your Age:</label>
+            <input type="number" name="age" id="age" placeholder="Enter name" max="60" min="10"
+                style="width: 160px;"><br>
+            <hr>
+
+            <label for="name">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+            <hr>
+
+            <label for="name">Enter your password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+            <hr>
+
+            <label for="date">Enter Date:</label>
+            <input type="date" id="date"> <br>
+            <hr>
+
+             <!-- Name must be the same for the options in radio button -->
+            <label for="name">Enter your option:</label>
+            <input type="radio" id="radio" name="lang">Java
+            <input type="radio" id="radio" name="lang">JavaScript
+            <input type="radio" id="radio" name="lang">JavaX <br>
+            <hr>
+
+            <label for="name">Enter your language:</label>
+            <input type="checkbox" id="checkbox" name="lang1">Java
+            <input type="checkbox" id="checkbox" name="lang2">JavaScript
+            <input type="checkbox" id="checkbox" name="lang3">JavaX <br>
+            <hr>
+
+            <input type="file" id="file" name="file" placeholder="Enter your file"><br>
+            <hr>
+            <input type="submit" name="submit" id="submit" value="Send">
+            <input type="reset" id="reset" name="reset" value="Clear">
+            <hr>
+            </form>
+        </div>
+    <!-- </div> -->
+</body>
+
+</html>
