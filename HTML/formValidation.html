@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Bio-Data Form</title>
+  <script>
+    function validateForm() {
+      // Get form input values
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var mobile = document.getElementById("mobile").value;
+      var qualification = document.getElementById("qualification").value;
+      var age = document.getElementById("age").value;
+      
+      // Validate Name: must contain only letters and be between 2 and 50 characters
+      if (name.length < 2 || name.length > 50 || !isAlphabetic(name)) {
+        alert("Please enter a valid name (only letters, 2 to 50 characters).");
+        return false;
+      }
+
+      // Validate Email: simple check for "@" and "." 
+      if (email.indexOf("@") === -1 || email.indexOf(".") === -1 || email.length < 5) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      // Validate Mobile: must be 10 digits and numeric
+      if (mobile.length !== 10 || isNaN(mobile)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        return false;
+      }
+
+      // Validate Qualification: cannot be empty
+      if (qualification.trim() === "") {
+        alert("Please enter your qualification.");
+        return false;
+      }
+
+      // Validate Age: must be a number between 18 and 99
+      if (isNaN(age) || age < 18 || age > 99) {
+        alert("Please enter a valid age (between 18 and 99).");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+
+    // Helper function to check if a string contains only alphabetic characters
+    function isAlphabetic(input) {
+      for (var i = 0; i < input.length; i++) {
+        var char = input.charAt(i);
+        if (!(char.toLowerCase() >= 'a' && char.toLowerCase() <= 'z') && char !== ' ') {
+          return false;
+        }
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h1>Employee Bio-Data Form</h1>
+  <form onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required><br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" name="mobile" required><br><br>
+
+    <label for="qualification">Qualification:</label>
+    <input type="text" id="qualification" name="qualification" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

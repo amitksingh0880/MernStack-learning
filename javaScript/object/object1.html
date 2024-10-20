@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="val1"></p>
+    <script>
+
+        const val1 = document.getElementById("val1");
+        let array = [
+            {
+                id: 1,
+                name: "Ayush"
+            },
+            {
+                id: 2,
+                name: "Anand"
+            },
+            {
+                id: 2,
+                name: "Anand"
+            },
+            {
+                id: 2,
+                name: "Anand"
+            },
+            {
+                id: 2,
+                name: "Anand"
+            },
+            {
+                id: 2,
+                name: "Anand"
+            },
+            {
+                id: 2,
+                name: "Anand"
+            },
+            {
+                id: 2,
+                name: "Anand"
+            }
+        ]
+        array.forEach((e)=>{
+            console.log(e);
+            val1.innerHTML += `id=${e["id"]}, name=${e["name"]}<br/>`  //Object can be used as array
+        })
+
+        array.forEach((e)=>{
+            console.log(e);
+            val1.innerHTML += `id=${e.id}, name=${e.name}<br/>`
+        })
+    </script>
+</body>
+
+</html>

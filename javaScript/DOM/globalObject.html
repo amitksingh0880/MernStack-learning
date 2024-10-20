@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Start</button>
+
+    <button type="button" onclick="showInfo()">Location</button>
+
+    <button onclick="back()">Back</button>
+
+    <button onclick="forward()">forward</button>
+
+    <script>
+        const btns = document.querySelector("#btn")
+        // btns.addEventListener("click", (event) => {
+        //     window.open("https://www.mozilla.org/", "mozillaTab");
+        // });
+
+        function showInfo(){
+            let pathName = window.location.pathname;
+            let hostName = window.location.hostname;
+            let currentName = window.location.href;
+            let protocolUsed = window.location.protocol;
+            // let navigateToDoc = window.location.assign("https://www.mozilla.org/")
+            alert("pathName:--"+pathName);
+            alert("currentName:--"+currentName);
+            alert("hostName:--"+hostName);
+            alert("protocolUsed:--"+protocolUsed);
+        }
+
+        function back(){
+            window.history.back()
+        }
+
+        function forward(){
+            window.history.forward()
+        }
+    </script>   
+</body>
+
+</html>

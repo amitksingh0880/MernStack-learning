@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="arrayShow()">Show</button>
+    <p id="val1"></p>
+    <p id="val2"></p>
+
+    <button onclick="arrayDisplay()">Dikha Na!</button>
+
+    <script>
+        function arrayShow() {
+            const pval = document.getElementById("val1");
+            let arr = new Array(12, 34, 46, 67, 6, 345, 35);
+            arr.forEach(function display(e, index){
+                pval.innerHTML += `Index=${index}, element=${e}<br/>`
+            })
+        }
+
+        function arrayDisplay(){
+            const pval1 = document.getElementById("val2");
+            let arr1 = new Array(0.8 , 84, "Almighty Amit is here", 85)
+            arr1.forEach((e,index)=>{
+                pval1.innerHTML += `Index=${index}, element=${e}<br/>`
+            })
+        }
+    </script>
+</body>
+
+</html>

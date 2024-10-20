@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let input = prompt("Enter value");
+         let arr = [
+            {
+                id: 1,
+                day: "Monday"
+            },
+            {
+                id: 2,
+                day: "tuesday"
+            },
+            {
+                id: 3,
+                day: "Wednesday"
+            },
+            {
+                id: 4,
+                day: "thursday"
+            },
+            {
+                id: 5,
+                day: "friday"
+            },
+            {
+                id: 6,
+                day: "saturday"
+            },
+            {
+                id: 7,
+                day: "Sunday"
+            },
+        ]
+        arr.forEach((e)=>{
+            if(input == e.id){
+                  alert(e["day"])
+            }
+        })
+    </script>
+</body>
+</html>
