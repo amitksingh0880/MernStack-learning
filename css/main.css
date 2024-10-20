@@ -1,0 +1,30 @@
+h2{
+    color: green;
+}
+body{
+    /* background-color:#F57C00 ; */
+    background-color: rgba(120, 130, 13,0.7);  /* maximum--256 ,  a==alpha*/
+}
+h2#unique{
+    color: purple;
+}
+#heading{
+    color: red;
+    text-align: center;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    text-decoration: underline overline dotted;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: gray;
+}
+#para1{
+    margin: 20px;
+    text-align: justify;
+    text-indent: 40px;
+
+}

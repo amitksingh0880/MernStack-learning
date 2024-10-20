@@ -1,0 +1,18 @@
+const data=[10,20,30,40,50];
+// let a=data[0];            \\
+// let b=data[1];             \\
+// let c=data[2];
+// let d=data[3];
+// let e=data[4];
+let [a,b,c,d,e]=data;        //                   second ways of destructuring.........
+console.log(a,b,c,d,e);      // 
+ 
+
+
+const studentInfo={
+    name:"Amit",
+    course:"MCA",
+    rollno: 1
+}
+let {name:sname, course:mycourse, rollno:rno}=studentInfo;
+console.log(sname,mycourse,rno);
