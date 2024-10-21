@@ -89,12 +89,13 @@
             var cvv = document.getElementById('cvv').value;
 
             // Regular Expressions for validation
+            var nameRegex = /^[A-Za-z ]$/;
             var cardNumberRegex = /^\d{4} \d{4} \d{4} \d{4}$/; // Matches '1234 5678 9012 3456'
             var expiryDateRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;  // Matches 'MM/YY'
             var cvvRegex = /^[0-9]{3}$/;                      // Matches '123'
 
             // Name validation (simple check for non-empty string)
-            if (name === '') {
+            if (nameRegex.test(name)) {
                 alert('Please enter your full name.');
                 return false;
             }
@@ -115,6 +116,16 @@
             if (!cvvRegex.test(cvv)) {
                 alert('Please enter a valid 3-digit CVV number.');
                 return false;
+            }
+
+            function isAlphabet(name) {
+                for (var i = 0; i < name.length; i++) {
+                    const char = name.charAt(i);
+                    if (!((char.toLowerCase() >= 'a' && char.toLowerCase() <= 'z') && char !== ' ')) {
+                        return false;
+                    }
+                }
+                return true;
             }
 
             // If all validations pass
